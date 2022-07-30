@@ -1,9 +1,10 @@
 package ru.netology
 
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
+    var likes = "201"
+    var human: String
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val lastSimb = likes[likes.length - 1]
+    human = if(lastSimb == '1') " человеку" else " людям"
+    println("понравилось $likes$human")
 }
